@@ -1,0 +1,6 @@
+       self.prev_body_pos = Snake.get_pos(self.snake_body_pos)
+        for x in range(self.apples_eaten):
+            self.next_body = ((self.prev_body_pos[0] + (x*16)), (self.prev_body_pos[1]))
+            self.snake_positions.append(self.next_body)
+
+        return self.snake_positions
